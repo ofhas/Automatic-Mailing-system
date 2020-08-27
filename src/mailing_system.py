@@ -9,7 +9,7 @@ while True:
 
     port = 587  # For starttls
     smtp_server = "smtp.gmail.com"
-    sender_email = "sender_email@sender_email.com"
+    sender_email = "sender_email@sender_email.com" # change to the address you wish to send from
     password = input("Type your password and press enter:")
 
     while True:
