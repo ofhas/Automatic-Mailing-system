@@ -23,9 +23,9 @@ while True:
         message = f"""\
 Subject: Hi there today's date is - {current_date}
 
-Write whatever mail contact you wish....."""
+Write whatever mail contant you wish....."""
 
-       # this will limit the days you wish to send the mail in out case the mail will be send from Sun - Thu
+       # this will limit the days you wish to send the mail, in our case the mail will be send from Sun - Thu
         if e.strftime("%a") == 'Sun' or e.strftime("%a") == 'Mon' or e.strftime("%a") == 'Tue' or e.strftime("%a") == 'Wed' or e.strftime("%a") == 'Thu':
             # you could also change the time the mail will be send
             if timestamp == eight_am:  # change to 08:00 AM
