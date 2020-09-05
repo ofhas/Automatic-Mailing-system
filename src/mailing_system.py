@@ -23,7 +23,7 @@ while True:
         message = f"""\
 Subject: Hi there today's date is - {current_date}
 
-Write whatever mail contant you wish....."""
+Write whatever mail content you wish....."""
 
        # this will limit the days you wish to send the mail, in our case the mail will be send from Sun - Thu
         if e.strftime("%a") == 'Sun' or e.strftime("%a") == 'Mon' or e.strftime("%a") == 'Tue' or e.strftime("%a") == 'Wed' or e.strftime("%a") == 'Thu':
@@ -37,4 +37,4 @@ Write whatever mail contant you wish....."""
                         server.ehlo()  # Can be omitted
                         server.login(sender_email, password)
                         server.sendmail(sender_email, name, message)
-                        print('Mail sent to', name, '\n')
+                        print('Mail sent to:', name)
