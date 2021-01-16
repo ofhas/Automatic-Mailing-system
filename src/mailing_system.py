@@ -36,5 +36,5 @@ Write whatever mail content you wish....."""
                         server.starttls(context=context)
                         server.ehlo()  # Can be omitted
                         server.login(sender_email, password)
-                        server.sendmail(sender_email, name, message)
+                        server.sendmail(sender_email, name, message) # you can encode your message and write a message in a different language by using message.encode('utf-8')
                         print('Mail sent to:', name)
