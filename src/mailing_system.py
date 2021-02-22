@@ -33,9 +33,9 @@ Write whatever mail content you wish....."""
                 for name in array:
                     context = ssl.create_default_context()
                     with smtplib.SMTP(smtp_server, port) as server:
-                        server.ehlo()  # Can be omitted
+                        server.ehlo()  
                         server.starttls(context=context)
-                        server.ehlo()  # Can be omitted
+                        server.ehlo()  
                         server.login(sender_email, password)
                         server.sendmail(sender_email, name, message) # you can encode your message and write a message in a different language by using message.encode('utf-8')
                         print('Mail sent to:', name)
