@@ -3,7 +3,7 @@ import smtplib
 import ssl
 import datetime
 import time
-
+import getpass
 
 # using now() to get current time
 while True:
@@ -11,7 +11,7 @@ while True:
     port = 587  # For starttls
     smtp_server = "smtp.gmail.com"
     sender_email = "sender_email@sender_email.com" # change to the address you wish to send from
-    password = input("Type your password and press enter:") # use google 3rd party application password, that way you won't have to use your login password
+    password = getpass.getpass(prompt='Type your password and press enter: ', stream=None)  # this allows entering the password without printing the characters on the terminal
 
     while True:
 
